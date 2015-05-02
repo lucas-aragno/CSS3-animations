@@ -1,0 +1,90 @@
+/* A cute little animation will happen when #load-state gets the .loaded class. Nothing needed here. 
+
+================================
+Necessary Code Below-- plz ignore */
+
+body { 
+  background: #000; 
+}
+
+#loader {
+  background: url(http://stash.rachelnabors.com/oz/loading/bg_loading.jpg?3) 0 0 no-repeat;
+  animation: down-the-hole .5s steps(2) infinite;
+}
+
+@keyframes down-the-hole {
+  0% {background-position: 0 -450px;}
+  100% {background-position: 0 -1350px;}
+}
+
+#loader .dolly { transition: opacity .01ms linear -.01ms;
+opacity: 0;}
+
+.loaded #loader .dolly {
+  background: url(http://stash.rachelnabors.com/oz/loading/dolly.png) 0 0 no-repeat;
+  opacity: 1;
+  top: -151px; left: 213px;
+  width: 218px; height: 463px;
+  animation: dolly-fall 2.5s ease-in 1;
+  animation-fill-mode: forwards;
+}
+
+
+
+.loaded #loader { 
+  background: url(http://stash.rachelnabors.com/oz/loading/bg_loading.jpg?3) 0 0 no-repeat;
+  animation: none;
+  opacity: 0;
+  transition: opacity .01s 2s;
+
+}
+
+@keyframes dolly-fall {
+  0% {top: -151px;}
+  35% { top: -250px; }
+  100% {top: 1500px;}
+}
+
+#loader {
+  width: 650px; height: 450px;
+  position: absolute;
+  top: 50%; left: 50%;
+  margin-top: -225px; margin-left: -325px;
+  overflow: hidden;
+}
+
+
+.ir {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+}
+.ir br { display: none; }
+
+
+.credits {
+  background: url("http://stash.rachelnabors.com/oz/sprite_frame.png");
+  left: 50%; top: 50%; 
+  margin-left: -325px; margin-top: 235px;
+  position: absolute;
+  width: 650px; height: 214px;
+}
+
+.xamag {
+  background: url("http://stash.rachelnabors.com/oz/sprite_frame.png?2");
+  position: absolute; left: 0; top: 0;
+  width: 217px; height: 155px;
+}
+
+.logo {
+  background: url("http://stash.rachelnabors.com/oz/sprite_frame.png?2") -244px 0;
+  position: absolute; left: 244px; top: 0;
+  width: 168px; height: 214px;
+}
+
+.rtg {
+  background: url("http://stash.rachelnabors.com/oz/sprite_frame.png?2") -412px 0;
+  position: absolute; left: 412px; top: 0;
+  width: 238px; height: 179px;
+}
