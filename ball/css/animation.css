@@ -1,0 +1,49 @@
+/* 
+================================
+A sample transition */
+.playing .hand {
+  margin-left: 30px;
+  transition: margin-left .25s ease-in;
+}
+
+/* 
+================================ */
+
+.playing .ball {
+  transition-property: margin-left;
+  transition-delay: .25s;
+  transition-duration: 3s;
+  /* transition-timing-function: linear; */
+  /* transition-timing-function: ease-in; */
+  /* transition-timing-function: ease-out; */
+  transition-timing-function: cubic-bezier(0,1.61,1,-0.7);
+  margin-left: 300px;
+
+}
+
+
+/* 
+================================
+Necessary CSS Below-- no need to edit */
+
+.hand {
+  background: url(http://s.cdpn.io/641/g_hand.png) 0 0 no-repeat;
+  position: absolute; top: 0; left: 80px;
+  width: 100px; height: 311px;
+}
+
+.ball {
+  background: #0097C0;
+  border-radius: 50%;
+  position: absolute; top: 200px; left: 160px;
+  width: 100px; height: 100px;
+}
+
+/* Image replacement */
+.ir {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+}
+.ir br { display: none; }
