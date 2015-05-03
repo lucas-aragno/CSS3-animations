@@ -7,9 +7,10 @@
 <!--Construct your own HTML5 audio loop!-->
 
 <!-- Start with the <audio></audio> tag.-->
-   <audio autoplay>
+   <audio autoplay loop>
    	<source src="sounds/song.mp3" type='audio/mp3'></source>
    </audio>
+   <button id="playme"> if you are on safari, play me</button>
 
   <!--Then add the sources http://stash.rachelnabors.com/music/byakkoya_single.xxx -->
 
@@ -24,8 +25,13 @@
 
     <div class="tuna"></div>
 	<script type="text/javascript" src="js/prefixfree.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript">
-       
+	    /* safari doesnt like autoplay */
+
+        $('#playme').click(function(){
+        	$("audio").play();
+        });
 	</script>
 </body>
 </html>
