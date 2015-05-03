@@ -1,11 +1,22 @@
-.sonic {
-	animation: run 1s steps(10) infinite;
+.sonic-walk {
+	animation: walk 1s steps(10) 1;
 	background: url(http://fc09.deviantart.net/fs71/i/2012/172/9/a/sonic_hd_sprite_by_moongrape-d54boq6.png) 0 0 no-repeat;
 	height: 130px; width: 100px;
 }
 
 
-@keyframes run {
+.sonic-run {
+	animation: run 1s steps(9) infinite;
+	background: url(http://fc09.deviantart.net/fs71/i/2012/172/9/a/sonic_hd_sprite_by_moongrape-d54boq6.png) -100px 0 no-repeat;
+	height: 130px; width: 100px;
+}
+
+@keyframes walk {
 	0% {background-position: 0 0;}
+	100% {background-position: -1024px 0;}
+}
+
+@keyframes run {
+	0% {background-position: -100px 0;}
 	100% {background-position: -1024px 0;}
 }
