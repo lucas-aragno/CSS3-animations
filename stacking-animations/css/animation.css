@@ -1,0 +1,27 @@
+#tuna {
+  background: url(http://stash.rachelnabors.com/img/codepen/tuna_sprite.png) 0 0 no-repeat; 
+  height: 200px; width: 400px;
+  position: absolute;
+  bottom: 3em;
+  margin-left: -150px;
+  left: 50%;
+  animation: 
+    walk-cycle 1s steps(12) 4,
+    sit-down .5s steps(5) 4s;
+  animation-fill-mode: forwards;
+  /* run sit-down after the walkcycle finishes
+     using an animation delay.
+     Use "steps(5)"; It should take about .5s. */
+  
+  /* Don't forget to set the fill-mode to forwards! */
+}
+
+@keyframes walk-cycle {  
+  0% { background-position: 0 0; } 
+  100% {background-position: 0 -2391px; } 
+}
+
+@keyframes sit-down {  
+  0% { background-position: -400px 0; } 
+  100% {background-position: -400px -1000px; } 
+}
