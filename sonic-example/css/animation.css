@@ -6,8 +6,9 @@
 
 
 .sonic-run {
-	animation: run 1s steps(9) infinite;
-	background: url(http://fc09.deviantart.net/fs71/i/2012/172/9/a/sonic_hd_sprite_by_moongrape-d54boq6.png) -100px 0 no-repeat;
+	animation: walk 1s steps(10) 1,
+	run 1s steps(9) infinite;
+	background: url(http://fc09.deviantart.net/fs71/i/2012/172/9/a/sonic_hd_sprite_by_moongrape-d54boq6.png) 0px 0 no-repeat;
 	height: 130px; width: 100px;
 	margin-left: 0%;
     
