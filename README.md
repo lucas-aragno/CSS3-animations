@@ -21,3 +21,7 @@ audio stuff:
 
 
 canplaythrough event waits until the music is loaded
+
+
+the loop attribute on audio tags has gaps, each browser takes different time to restart the loops
+check seamslessloop.js
