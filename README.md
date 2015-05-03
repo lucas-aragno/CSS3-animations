@@ -15,3 +15,9 @@ animation: keyframeblockname duration timingfunction (easing) delay iteration co
 
 keyframe reference:
    https://css-tricks.com/snippets/css/keyframe-animation-syntax/
+
+
+audio stuff:
+
+
+canplaythrough event waits until the music is loaded
