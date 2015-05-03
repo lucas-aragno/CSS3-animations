@@ -1,22 +1,28 @@
+
+/*
+
+using stacked animations now
+
+
 .sonic-walk {
 	animation: walk 1s steps(10) 1;
 	background: url(http://fc09.deviantart.net/fs71/i/2012/172/9/a/sonic_hd_sprite_by_moongrape-d54boq6.png) 0 0 no-repeat;
 	height: 130px; width: 100px;
 }
 
+*/
 
 .sonic-run {
 	animation: walk 1s steps(10) 1,
 	run 1s steps(9) infinite;
 	background: url(http://fc09.deviantart.net/fs71/i/2012/172/9/a/sonic_hd_sprite_by_moongrape-d54boq6.png) 0px 0 no-repeat;
 	height: 130px; width: 100px;
-	margin-left: 0%;
-    
+	margin-left: 0%;   
 }
 
 .sonic-run:hover {
 	margin-left: 50%;
-	transition: margin-left 3s cubic-bezier(0.165, 0.84, 0.44, 1);;
+	transition: margin-left 3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 @keyframes walk {
