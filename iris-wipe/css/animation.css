@@ -2,7 +2,13 @@
 ================================
 Reference CSS */
 .cut {
-  background: url(//stash.rachelnabors.com/oz/opening/cut-hole.png?1) 70% 60% no-repeat;       
+  background: url(//stash.rachelnabors.com/oz/opening/cut-hole.png?1) 70% 60% no-repeat;      
+  background-size: 3000px 2077px; 
+}
+
+.loaded .cut {
+  background-size: 650px 450px;
+  transition: background-size 1s linear 3.25s;
 }
 
 
