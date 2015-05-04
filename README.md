@@ -20,7 +20,7 @@ keyframe reference:
 audio stuff:
 
 
-canplaythrough event waits until the music is loaded
+canplaythrough event let us know when the media should be able to play from start to finish without pause at the current download rate
 
 
 the loop attribute on audio tags has gaps, each browser takes different time to restart the loops
