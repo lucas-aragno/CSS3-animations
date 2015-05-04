@@ -25,3 +25,17 @@ canplaythrough event let us know when the media should be able to play from star
 
 the loop attribute on audio tags has gaps, each browser takes different time to restart the loops
 check seamslessloop.js
+
+
+http://www.html5rocks.com/en/tutorials/audio/scheduling/
+
+
+CSS callbacks function
+
+
+animation: animationEnd. aniomationStart, and animationIteration
+transition: transitionEnd
+
+chorme tools:
+
+about:flags

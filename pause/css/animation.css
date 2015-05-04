@@ -1,0 +1,24 @@
+/* Scope all the animations and transitions to a single state class. */
+.tuna.walking {
+  animation: walk-cycle 1s steps(12) infinite;
+  right: 200%;
+  transition: right 8s linear;
+  cursor: pointer;
+}
+
+/* No further editing required */  
+.tuna {
+  background: url(http://stash.rachelnabors.com/img/codepen/tuna_sprite.png) 0 0 no-repeat; 
+  height: 200px;
+  width: 400px;
+  position: absolute;
+  top: 50%; margin-top: -100px; 
+  left: 50%; margin-left: -200px;
+}
+
+@keyframes walk-cycle {  
+  0% {background-position: 0 0; } 
+  100% {background-position: 0 -2391px; } /* Must be full height of sprite or skipping will happen.*/
+}
+
+body { overflow: hidden;}
